@@ -1,0 +1,27 @@
+CH1:
+
+
+C:\Users\prahladbhai.patel\PycharmProjects\STGCertification\Challanges>C:\Prahlad\python.exe challange1.py
+
+DevTools listening on ws://127.0.0.1:54197/devtools/browser/f1b3f921-7336-480c-b665-e3874003d837
+.
+----------------------------------------------------------------------
+Ran 1 test in 5.740s
+
+OK
+====================================
+CH2:
+
+
+C:\Users\prahladbhai.patel\PycharmProjects\STGCertification\Challanges>C:\Prahlad\python.exe challange2.py
+
+DevTools listening on ws://127.0.0.1:50522/devtools/browser/1fd37946-0129-426d-999f-257156c6c9ba
+PROSCHE is in list of cars.
+.
+----------------------------------------------------------------------
+Ran 1 test in 19.159s
+
+OK
+=============================
+
+
