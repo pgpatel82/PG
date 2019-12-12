@@ -14,15 +14,23 @@ class challenge3(unittest.TestCase):
 
     def test_challenge3forloop(self):
         self.driver.get("https://www.copart.com/")
-        self.assertIn("Auto Auction - Copart USA - Salvage Cars for Sale in Online Car Auctions", self.driver.title)
+        self.assertIn("Copart", self.driver.title)
+        self.driver.implicitly_wait(10)
         #elements = self.driver.find_element(By.XPATH, "//*[@ng-if=\"popularSearches\"]//a")
-        elements = self.driver.find_element(By.XPATH, "//*[@id=\"tabTrending\"]//ul")
-        items = elements.find_elements_by_tag_name("li")
-        print(items)
-        for item in items:
-            print(item.text + "-->" item.href)
-            #print(item.getattribute("href")
+        elements = self.driver.find_elements(By.XPATH, "//*[@id=\"tabTrending\"]/div[1]//a")
+        for item in elements:
+            print(item.text + "-->" + item.get_attribute("href"))
 
+    def test_challenge3whileloop(self):
+        self.driver.get("https://www.copart.com/")
+        self.assertIn("Copart", self.driver.title)
+        self.driver.implicitly_wait(10)
+        #elements = self.driver.find_element(By.XPATH, "//*[@ng-if=\"popularSearches\"]//a")
+        elements = self.driver.find_elements(By.XPATH, "//*[@id=\"tabTrending\"]/div[3]//a")
+        i = 0
+        while i < len(elements):
+            print(elements[i].text + "-->" + elements[i].get_attribute("href"))
+            i = i+1
 
 if __name__ == '__main__':
     unittest.main()
