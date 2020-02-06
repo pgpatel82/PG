@@ -30,7 +30,7 @@ class challenge7(unittest.TestCase):
                 WebDriverWait(self.driver, 60).until(
                     expected_conditions.visibility_of_element_located((By.XPATH, '//img[@alt="Copart"]')))
             except TimeoutError:
-                print("ERROR: {}'s link ({}) timed out".format(ListLinkarray[i][1], ListLinkarray[i][1]))
+                print("ERROR: {}'s link ({}) timed out".format(ListLinkarray[i][0], ListLinkarray[i][1]))
             i += 1
             time.sleep(2)
 if __name__ == '__main__':
