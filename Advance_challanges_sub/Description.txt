@@ -1,0 +1,18 @@
+1. Cancel_account.py:  
+
+This script is similar to our assignment Challenge 8 and 9. I am using this for Canceling Sling account. Where 3 different API calls (GET and POST method) required.
+Parsing the results from one API and passing them as parameter for next API.
+
+
+2. url_redirect.py: 
+This script is similar to our assignment Challenge 10.
+This script is reading data from and writing data to excel sheet. Excel is having Base URL and expected redirected URL. 
+Reading Base URL, launching it through request call and checking if redirect is successful or not and also response code (e.g. 404 etc.). Capturing results in same sheet.
+
+
+3. Signup_*.html files: 
+This is similar to our assignment Challenge 12.
+I have created some automation scripts for some sling website flow like creating new account (Signup), sign-in to slings etc. There were some 7 end to end use cases automated as of now.
+I have attached my sample result report and log file. I have use Robot Framework and used Python for all selenium web driver stuff. If required I can share the code.
+
+Please note, I have changed some api and url links to like dummy (XXX) due to confidentiality in above scripts. Please do not share this further.
